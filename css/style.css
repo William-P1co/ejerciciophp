@@ -6,3 +6,7 @@
 .navbar>.container-fluid{
     background: #8484ff;
 }
+.bg-warning  {
+    
+    background: azure;
+}

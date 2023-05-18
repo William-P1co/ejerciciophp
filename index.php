@@ -47,11 +47,11 @@
                         <div class="container1">
                             <div class="row g-3">
                                 <div class="col-12">
-                                    <form id = "frmData">
+                                    <form id = "frmData" method="POST" action="logica.php" >
                                         <div class="row g-3">
                                             <div class="col-6">
                                                 <label for="nombre" class="form-label">Nombre(s) del candidato</label>
-                                                <input type="text" class="form-control" id="nombre" name="nombre">                  
+                                                <input type="text" class="form-control" id="nombre" name="nombre" >                  
                                             </div>
                                             <div class="col-6">
                                                 <label for="apellidos" class="form-label">Apellido(s) del candidato</label>
@@ -71,11 +71,11 @@
                                                 <label for="nivelEst" class="form-label">Nivel de estudio del candidato</label>
                                                 <select class="form-select" aria-label="Default select example" id="nivelEst" name="nivelEst">
                                                     <option selected>Seleccione el nivel de estudio</option>
-                                                    <option value="1">Bachiller</option>
-                                                    <option value="2">Tecnico</option>
-                                                    <option value="3">Tecnologo</option>
-                                                    <option value="4">Profesional</option>
-                                                    <option value="5">Estudiante Universitario</option>
+                                                    <option value="Bachiller">Bachiller</option>
+                                                    <option value="Tecnico">Tecnico</option>
+                                                    <option value="Tecnologo">Tecnologo</option>
+                                                    <option value="Profecional">Profesional</option>
+                                                    <option value="Estudiante universitario">Estudiante Universitario</option>
                                                 </select>                  
                                             </div>
                                             <div class="col-6">
@@ -90,7 +90,7 @@
                                             <div class="row g-3">
                                                     <div class="col-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="python">
+                                                            <input class="form-check-input" type="checkbox" value="python" name="lenguaje[]"id="python">
                                                             <label class="form-check-label" for="flexCheckDefault">
                                                                     Python
                                                             </label>
@@ -98,7 +98,7 @@
                                                     </div>
                                                     <div class="col-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="html">
+                                                            <input class="form-check-input" type="checkbox" value="html" name="lenguaje[]"id="html">
                                                             <label class="form-check-label" for="flexCheckDefault">
                                                                 HTML
                                                             </label>
@@ -106,7 +106,7 @@
                                                     </div>
                                                     <div class="col-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="js">
+                                                            <input class="form-check-input" type="checkbox" value="Javascript" name="lenguaje[]"id="js">
                                                             <label class="form-check-label" for="flexCheckDefault">
                                                                 JavaScript
                                                             </label>
@@ -114,7 +114,7 @@
                                                     </div>
                                                     <div class="col-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="css">
+                                                            <input class="form-check-input" type="checkbox" value="CSS" name="lenguaje[]"id="css">
                                                             <label class="form-check-label" for="flexCheckDefault">
                                                                 CSS
                                                             </label>
@@ -124,7 +124,7 @@
                                             <div class="row g-3">
                                                     <div class="col-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="php">
+                                                            <input class="form-check-input" type="checkbox" value="php" name="lenguaje[]"id="php">
                                                             <label class="form-check-label" for="flexCheckDefault">
                                                                     Php
                                                             </label>
@@ -132,7 +132,7 @@
                                                     </div>
                                                     <div class="col-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="nodejs">
+                                                            <input class="form-check-input" type="checkbox" value="nodeJS" name="lenguaje[]"id="nodejs">
                                                             <label class="form-check-label" for="flexCheckDefault">
                                                                 nodeJs
                                                             </label>
@@ -140,7 +140,7 @@
                                                     </div>
                                                     <div class="col-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="c">
+                                                            <input class="form-check-input" type="checkbox" value="c#" name="lenguaje[]"id="c">
                                                             <label class="form-check-label" for="flexCheckDefault">
                                                                 C#
                                                             </label>
@@ -148,7 +148,7 @@
                                                     </div>
                                                     <div class="col-3">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="typeScript">
+                                                            <input class="form-check-input" type="checkbox" value="typescript" name="lenguaje[]"id="typeScript">
                                                             <label class="form-check-label" for="flexCheckDefault">
                                                                 TypeScript
                                                             </label>
@@ -157,7 +157,7 @@
                                             </div>
                                             <div class="container mt-4 text-center" >
                                                 <input type="submit" data-accion="POST" class="btn btn-primary" value="Guardar Clientes">
-                                                <input type="delete" data-accion="POST" class="btn btn-primary" value="Borrar">
+                                                <input type="reset"  data-accion="POST" class="btn btn-primary" value="Borrar">
                                                 
                                             </div>
                                         </div>
