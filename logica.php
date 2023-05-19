@@ -16,16 +16,16 @@ echo '<br>lenguajes</br>';
    $lenguaje = isset($_POST["lenguaje"]) ?  count($_POST["lenguaje"]):""; 
    echo $lenguaje;  
 
-   /* if($lenguaje >= 2){
-    header("Location:../basico.php");
+    if ($lenguaje <= 2 && (($idioma==1)||($idioma==2) || ($idioma==3))){
+        header("Location:basico.php");
     
-    }elseif($lenguaje >= 4){
-        header("Location:../intermedio.php");
+    }elseif($lenguaje <= 5 && (($idioma==1)||($idioma==2) || ($idioma==3))){
+        header("Location:intermedio.php");
 
-    }elseif($lenguaje >= 6){
-        header("Location:../avanzado.php");
+    }elseif($lenguaje >= 6 && (($idioma==1)||($idioma==2) || ($idioma==3))){
+        header("Location:avanzado.php");
 
-    } */
+    } 
 
     // switch ($lenguaje) {
     //     case ($lenguaje === 1):
@@ -36,7 +36,7 @@ echo '<br>lenguajes</br>';
     //         break;
         
     //     case ($lenguaje >= 4 && $idioma === 2):
-            
+
     //         break;
 
     //     default:
